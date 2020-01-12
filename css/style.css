@@ -1,0 +1,35 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 100%;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.side-nav {
+  position: fixed;
+  top: 200px;
+  left: 0;
+  width: 35%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.side-nav__list-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin-left: 35%;
+}
