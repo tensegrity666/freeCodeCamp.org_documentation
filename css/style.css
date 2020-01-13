@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 @import url("https://fonts.googleapis.com/css?family=Press+Start+2P|Ubuntu&display=swap");
 
 :root {
@@ -31,7 +33,7 @@ h1 {
 }
 
 pre {
-  font-family: monospace, monospace;
+  font-family: monospace;
   font-size: 1em;
 }
 
@@ -47,15 +49,20 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: monospace;
   font-size: 1em;
 }
 
 /* Normalize ends */
 
 .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 100%;
   font-family: 'Ubuntu', sans-serif;
   font-size: 10px;
@@ -72,7 +79,8 @@ samp {
 }
 
 .header-main__title {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 100px;
   padding: 45px 80px;
   margin: 0;
@@ -84,9 +92,16 @@ samp {
 }
 
 .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 1800px;
   margin: 0 auto;
 }
@@ -104,10 +119,18 @@ samp {
 }
 
 .side-nav__list-links {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 95vh;
   padding-top: 100px;
   padding-bottom: 50px;
@@ -116,7 +139,8 @@ samp {
 }
 
 .side-nav__link-item {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0 10px;
   list-style: none;
   border-radius: var(--border-radius);
@@ -141,13 +165,21 @@ samp {
 
 .nav-link:active {
   color: var(--color-secondary);
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
   transition: 0.1s;
 }
 
 .main-content {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 75%;
   margin-left: 25%;
   font-size: 2em;
@@ -171,6 +203,7 @@ samp {
 }
 
 .article__header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   display: block;
@@ -192,7 +225,8 @@ samp {
   position: fixed;
   right: 10%;
   bottom: 5%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: none;
   width: 80px;
   height: 80px;
@@ -227,7 +261,10 @@ samp {
 
 @media (max-width: 768px) {
   .content-wrapper {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 720px;
   }
 
@@ -247,7 +284,14 @@ samp {
   }
 
   .side-nav__list-links {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .side-nav__link-item {
+    width: 100%;
+    text-align: center;
   }
 
   .main-content {
