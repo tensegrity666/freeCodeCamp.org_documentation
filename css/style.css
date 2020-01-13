@@ -76,9 +76,9 @@
 .side-nav__link-item:hover {
   font-family: 'Press Start 2P', cursive;
   font-size: 0.3em;
+  cursor: pointer;
   background: var(--background-code);
   border-radius: var(--border-radius);
-  cursor: pointer;
 }
 
 .link {
