@@ -90,12 +90,16 @@
           of purposes by supplementing it with additional objects; for example:
         </p>
         <ul>
-          <li>Client-side JavaScript extends the core language by supplying
-            objects to control a browser and its Document Object Model (DOM). For
+          <li><b>Client-side JavaScript</b> extends the core language by
+            supplying
+            objects to control a browser and its Document Object Model
+            <b>(DOM)</b>. For
             example, client-side extensions allow an application to place elements
-            on an HTML form and respond to user events such as mouse clicks, form
+            on an <b>HTML</b> form and respond to user events such as mouse clicks,
+              form
             input, and page navigation.</li>
-          <li>Server-side JavaScript extends the core language by supplying
+          <li><b>Server-side JavaScript</b> extends the core language by
+            supplying
             objects relevant to running JavaScript on a server. For example,
             server-side extensions allow an application to communicate with a
             database, provide continuity of information from one invocation to
@@ -108,8 +112,10 @@
         <p>This guide assumes you have the following basic background:</p>
         <ul>
           <li>A general understanding of the Internet and the World Wide Web
-            (WWW).</li>
-          <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+            <b>(WWW)</b>.</li>
+          <li>Good working knowledge of HyperText Markup Language
+            <b>(HTML)</b>.
+          </li>
           <li>Some programming experience. If you are new to programming, try one
             of the tutorials linked on the main page about JavaScript.</li>
         </ul>
@@ -159,7 +165,9 @@
             greetMe("World");
           </code>
         </pre>
-        <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your
+        <p>Select the code in the pad and hit <b>Ctrl+R</b> to watch it unfold
+          in
+          your
           browser!</p>
       </section>
       <section id="Variables" class="main-section">
@@ -167,22 +175,30 @@
         <p>You use variables as symbolic names for values in your application. The
           names of variables, called identifiers, conform to certain rules.</p>
 
-        <p>A JavaScript identifier must start with a letter, underscore (_), or
-          dollar sign ($); subsequent characters can also be digits (0-9). Because
+        <p>A JavaScript identifier must start with a letter, underscore
+          <b>(_)</b>,
+          or
+          dollar sign <b>($)</b>; subsequent characters can also be digits
+          <b>(0-9)</b>.
+          Because
           JavaScript is case sensitive, letters include the characters "A" through
           "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
 
-        <p>You can use ISO 8859-1 or Unicode letters such as å and ü in
+        <p>You can use <b>ISO 8859-1</b> or <b>Unicode</b> letters such as å
+          and ü
+          in
           identifiers.
           You can also use the Unicode escape sequences as characters in
-          identifiers. Some examples of legal names are Number_hits, temp99, and
-          _name.</p>
+          identifiers. Some examples of legal names are <b>Number_hits</b>,
+          <b>temp99</b>,
+          and
+          <b>_name</b>.</p>
       </section>
       <section id="Declaring_variables" class="main-section">
         <h2 class="article__header">Declaring variables</h2>
         <p>You can declare a variable in three ways:</p>
         <ul>
-          <li>With the keyword var. For example,
+          <li>With the keyword <b>var</b>. For example,
           <pre>
           <code class="code-example">
             var x = 42;
@@ -198,7 +214,7 @@
           </pre>
             This always declares a global variable. It generates a strict
             JavaScript warning. You shouldn't use this variant.</li>
-          <li>With the keyword let. For example,
+          <li>With the keyword <b>let</b>. For example,
           <pre>
           <code class="code-example">
             let y = 13;
@@ -216,7 +232,9 @@
           document. When you declare a variable within a function, it is called a
           local variable, because it is available only within that function.</p>
 
-        <p>JavaScript before ECMAScript 2015 does not have block statement scope;
+        <p>JavaScript before <b>ECMAScript 2015</b> does not have block
+          statement
+          scope;
           rather, a variable declared within a block is local to the function (or
           global scope) that the block resides within. For example the following
           code will log 5, because the scope of x is the function (or global
@@ -233,7 +251,7 @@
           </code>
         </pre>
         <p>This behavior changes, when using the let declaration introduced in
-          ECMAScript 2015.</p>
+          <b>ECMAScript 2015</b>.</p>
         <pre>
           <code class="code-example">
             if (true) {
@@ -254,7 +272,7 @@
           frame from another window or frame by specifying the window or frame
           name. For example, if a variable called phoneNumber is declared in a
           document, you can refer to this variable from an iframe as
-          parent.phoneNumber.</p>
+          <b>parent.phoneNumber</b>.</p>
       </section>
       <section id="Constants" class="main-section">
         <h2 class="article__header">Constants</h2>
@@ -300,23 +318,28 @@
       </section>
       <section id="Data_types" class="main-section">
         <h2 class="article__header">Data types</h2>
-        <p>The latest ECMAScript standard defines eight data types:</p>
+        <p>The latest <b>ECMAScript</b> standard defines <b>eight data
+          types</b>:
+        </p>
         <ul>
           <li>Seven data types that are primitives:
             <ul>
-              <li>Boolean. True and False.</li>
-              <li>null. A special keyword denoting a null value. Because JavaScript
+              <li><b>Boolean</b>. True and False.</li>
+              <li><b>Null</b>. A special keyword denoting a null value. Because
+                JavaScript
                 is case-sensitive, null is not the same as Null, NULL, or any other
                 variant.</li>
-              <li>undefined. A top-level property whose value is undefined.</li>
-              <li>String. "Howdy"</li>
-              <li>Number. 42 or 3.14159.</li>
-              <li>BigInt (new in ECMAScript 2015). For a very big numbers.</li>
-              <li>Symbol (new in ECMAScript 2015). A data type whose instances are
+              <li><b>Undefined</b>. A top-level property whose value is undefined.
+              </li>
+              <li><b>String</b>. "Howdy"</li>
+              <li><b>Number</b>. 42 or 3.14159.</li>
+              <li><b>BigInt</b> (new in ECMAScript 2015). For a very big
+                numbers.</li>
+              <li><b>Symbol</b> (new in ECMAScript 2015). A data type whose instances are
                 unique and immutable.</li>
             </ul>
           </li>
-          <li>and Object</li>
+          <li>and <b>Object</b></li>
         </ul>
         <p>Although these data types are a relatively small amount, they enable
           you to perform useful functions with your applications. Objects and
@@ -325,7 +348,7 @@
           procedures that your application can perform.</p>
       </section>
       <section id="if_else_statement" class="main-section">
-        <h2 class="article__header">if...else statement</h2>
+        <h2 class="article__header"><i>if...else</i> statement</h2>
         <p>Use the if statement to execute a statement if a logical condition is
           true. Use the optional else clause to execute a statement if the
           condition is false. An if statement looks as follows:</p>
@@ -340,8 +363,12 @@
         </pre>
         <p>condition can be any expression that evaluates to true or false. See
           Boolean for an explanation of what evaluates to true and false. If
-          condition evaluates to true, statement_1 is executed; otherwise,
-          statement_2 is executed. statement_1 and statement_2 can be any
+          condition evaluates to true, <b>statement_1</b> is executed;
+          otherwise,
+          <b>statement_2</b> is executed. <b>statement_1</b> and
+          <b>statement_2</b>
+          can be
+          any
           statement, including further nested if statements.</p>
         <p>You may also compound the statements using else if to have multiple
           conditions tested in sequence, as follows:</p>
@@ -360,8 +387,13 @@
         </pre>
         <p>In the case of multiple conditions only the first logical condition
           which evaluates to true will be executed. To execute multiple
-          statements, group them within a block statement ({ ... }) . In
-          general, it's good practice to always use block statements, especially
+          statements, group them within a block statement</p>
+        <pre>
+          <code>
+            ({ ... })
+          </code>
+        </pre>.
+        <p>In general, it's good practice to always use block statements, especially
           when nesting if statements:</p>
         <pre>
           <code class="code-example">
@@ -397,7 +429,7 @@
         </pre>
       </section>
       <section id="while_statement" class="main-section">
-        <h2 class="article__header">while statement</h2>
+        <h2 class="article__header"><i>while</i> statement</h2>
         <p>A while statement executes its statements as long as a specified
           condition evaluates to true. A while statement looks as follows:</p>
         <pre>
@@ -405,7 +437,8 @@
           while (condition) statement
           </code>
         </pre>
-        <p>If the condition becomes false, statement within the loop stops
+        <p>If the condition becomes <b>false</b>, statement within the loop
+          stops
           executing and control passes to the statement following the loop.</p>
         <p>The condition test occurs before statement in the loop is executed.
           If the condition returns true, statement is executed and the condition
@@ -437,8 +470,10 @@
           <li>After the second pass: n = 2 and x = 3</li>
           <li>After the third pass: n = 3 and x = 6</li>
         </ul>
-        <p>After completing the third pass, the condition n &#60; 3 is no longer
-          true,
+        <p>After completing the third pass, the condition <b>n &#60; 3</b> is
+          no
+          longer
+          <b>true</b>,
             so the loop terminates.</p>
         </section>
         <section id="Function_declarations" class="main-section">
@@ -451,7 +486,7 @@
           <li>A list of arguments to the function, enclosed in parentheses and
             separated by commas.</li>
           <li>The JavaScript statements that define the function, enclosed in
-            curly brackets, { }.</li>
+            curly brackets, <b>{ }</b>.</li>
         </ul>
         <p>For example, the following code defines a simple function named
           square:</p>
