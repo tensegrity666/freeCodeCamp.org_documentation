@@ -11,6 +11,49 @@
   --border-radius: 10px;
 }
 
+/* Normalize starts */
+
+html {
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  margin: 0.67em 0;
+  font-size: 2em;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+
+/* Normalize ends */
+
 .page {
   display: flex;
   flex-direction: column;
