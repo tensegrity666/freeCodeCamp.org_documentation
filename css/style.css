@@ -182,6 +182,7 @@ samp {
           flex-direction: column;
   width: 75%;
   margin-left: 25%;
+  overflow-x: hidden;
   font-size: 2em;
   line-height: 2em;
   scroll-behavior: smooth;
@@ -230,7 +231,7 @@ samp {
   display: none;
   width: 80px;
   height: 80px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   font-family: 'Press Start 2P', cursive;
   font-size: 47px;
   line-height: 50px;
@@ -239,6 +240,10 @@ samp {
   background-color: var(--color-secondary);
   border-radius: 50%;
   opacity: 0.6;
+}
+
+.upward-button:active {
+  opacity: 0.9;
 }
 
 @media (max-width: 1024px) {
