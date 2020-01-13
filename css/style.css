@@ -18,6 +18,10 @@
   line-height: 10px;
 }
 
+.navbar-header {
+  display: none;
+}
+
 .header-main {
   z-index: 1;
   width: 100%;
@@ -75,19 +79,22 @@
 
 .side-nav__link-item:hover {
   font-family: 'Press Start 2P', cursive;
-  font-size: 0.3em;
-  cursor: pointer;
+  font-size: 14px;
   background: var(--background-code);
   border-radius: var(--border-radius);
 }
 
-.link {
+.nav-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
   color: #000000;
   text-decoration: none;
   cursor: pointer;
+  outline: none;
 }
 
-.link:active {
+.nav-link:active {
   color: var(--color-secondary);
   transition: 0.1s;
 }
@@ -99,6 +106,11 @@
   margin-left: 25%;
   font-size: 2em;
   line-height: 2em;
+  scroll-behavior: smooth;
+}
+
+.main-content:last-child {
+  margin-bottom: 200px;
 }
 
 .code-example {
@@ -108,7 +120,7 @@
   border-radius: var(--border-radius);
 }
 
-.main-content__article {
+.main-section {
   position: relative;
 }
 
@@ -123,6 +135,7 @@
 }
 
 .reference-link {
+  width: auto;
   font-family: 'Press Start 2P', cursive;
   font-size: 0.8em;
   color: #000000;
