@@ -146,6 +146,25 @@
   vertical-align: middle;
 }
 
+.upward-button {
+  position: fixed;
+  right: 10%;
+  bottom: 5%;
+  box-sizing: border-box;
+  display: none;
+  width: 80px;
+  height: 80px;
+  padding: 10px 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 47px;
+  line-height: 50px;
+  color: #000000;
+  text-decoration: none;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
 @media (max-width: 1024px) {
   .content-wrapper {
     width: 990px;
@@ -194,19 +213,19 @@
     margin: 10px;
     overflow-y: auto;
   }
+
+  .upward-button {
+    display: block;
+  }
 }
 
 @media (max-width: 375px) {
   .content-wrapper {
-    width: 360px;
+    width: 365px;
   }
 
   .side-nav {
     display: none;
-  }
-
-  .article__header {
-    text-align: center;
   }
 
   .main-content {
