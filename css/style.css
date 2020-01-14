@@ -257,7 +257,6 @@ code {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 720px;
-    overflow-x: hidden;
   }
 
   .code-example {
@@ -302,7 +301,7 @@ code {
 @media (max-width: 414px) {
   .content-wrapper {
     width: 365px;
-    overflow-x: hidden;
+    margin: 0 auto;
   }
 
   .side-nav {
