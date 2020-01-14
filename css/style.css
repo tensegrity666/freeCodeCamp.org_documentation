@@ -142,6 +142,7 @@ samp {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 10px;
+  white-space: nowrap;
   list-style: none;
   border-radius: var(--border-radius);
 }
@@ -252,17 +253,18 @@ samp {
     overflow-x: hidden;
   }
 
+  .header-main__title {
+    box-sizing: border-box;
+    width: 1024px;
+  }
+
   .code-example {
     font-size: smaller;
   }
 
   .side-nav__list-links {
-    padding: 100px 5px 50px 5px;
+    padding: 100px 0 50px;
     overflow-y: auto;
-  }
-
-  .side-nav__link-item {
-    padding: 12px 10px;
   }
 }
 
