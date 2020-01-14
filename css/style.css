@@ -233,7 +233,6 @@ code {
 @media (max-width: 1024px) {
   .content-wrapper {
     width: 990px;
-    overflow-x: hidden;
   }
 
   .header-main__title {
