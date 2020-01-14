@@ -224,8 +224,8 @@ samp {
 
 .upward-button {
   position: fixed;
-  right: 10%;
-  bottom: 5%;
+  right: 15%;
+  bottom: 3%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: none;
@@ -278,6 +278,8 @@ samp {
   }
 
   .header-main__title {
+    box-sizing: border-box;
+    width: 768px;
     height: 60px;
     padding: 25px 25px;
     font-size: 3em;
@@ -310,7 +312,7 @@ samp {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .content-wrapper {
     width: 365px;
   }
@@ -321,5 +323,9 @@ samp {
 
   .main-content {
     margin: 0 5px;
+  }
+
+  .header-main__title {
+    width: 100%;
   }
 }
