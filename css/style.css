@@ -11,6 +11,7 @@
   --border-radius: 10px;
 
   line-height: 1.15;
+  scroll-behavior: smooth;
 }
 
 /* Normalize starts */
@@ -166,7 +167,6 @@ code {
   margin-left: 25%;
   font-size: 2em;
   line-height: 2em;
-  scroll-behavior: smooth;
 }
 
 .main-content:last-child {
