@@ -1,7 +1,7 @@
-##https://tensegrity666.github.io/freeCodeCamp.org_documentation/
+## https://tensegrity666.github.io/freeCodeCamp.org_documentation/
 
 
-##Task:
+## Task:
 Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/NdrKKL.
 
 Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
